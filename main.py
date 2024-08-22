@@ -1,4 +1,3 @@
-# !pip install openai
 import os
 from dotenv import load_dotenv, find_dotenv
 from openai import OpenAI
@@ -27,7 +26,6 @@ def answer_question(question):
     return response.choices[0].message.content
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     question = "What is the capital of France?"
     answer = answer_question(question)
